@@ -1,266 +1,154 @@
-  -----------------------------------------------------------------------------
-  Mata Kuliah   **:**   Pemrograman Web Lanjut (PWL)
-  ------------- ------- -------------------------------------------------------
-  Program Studi **:**   D4 -- Teknik Informatika
+# Jobsheet 2 - Pemrograman Mobile
 
-  Semester      **:**   5
+  * [cite\_start]**Nama:** Muhammad Rifda Musyaffa’ [cite: 1]
+  * [cite\_start]**NIM:** 2341720028 [cite: 1]
+  * [cite\_start]**Kelas:** TI-3G [cite: 1]
+  * [cite\_start]**Semester:** 5 [cite: 1]
+  * [cite\_start]**Program Studi:** D4 – Teknik Informatika [cite: 1]
 
-  Kelas         **:**   TI-3G
+-----
 
-  NIM           **:**   2341720028
+## Praktikum 1: Modifikasi Kode
 
-  Nama          **:**   Muhammad Rifda Musyaffa'
+[cite\_start]Terdapat sebuah kode Dart yang perlu dimodifikasi pada baris ke-3[cite: 4].
 
-  Jobsheet Ke-  **:**   2
-  -----------------------------------------------------------------------------
+**Kode Awal**
+```dart
+void main() {
+  for (int i = 0; i < 10; i++) {
+    print('hello ${i + 2}');
+  }
+}
+```
+**Output yang Diinginkan**
+`Nama saya adalah Fulan, sekarang berumur 18` hingga `Nama saya adalah Fulan, sekarang berumur 9`
 
-**Laporan Jobsheet**
+**Jawaban/Deskripsi**
+[cite\_start]Untuk mendapatkan output yang diinginkan, variabel `i` diatur dengan nilai awal 20, dan kondisi `i > 10` digunakan agar perulangan berhenti saat nilai `i` mencapai 11[cite: 6]. [cite\_start]Digunakan juga operator `decrement` (`i--`) untuk mengurangi nilai `i` di setiap perulangan[cite: 6]. [cite\_start]Di dalam perulangan, nilai `i` dikurangi 2 pada fungsi `print()` untuk menghasilkan output yang sesuai[cite: 6].
 
-**Praktikum Ke-1**
+**Kode yang Telah Dimodifikasi**
+```dart
+void main() {
+  /*
+  Modifikasilah kode pada baris 4 di VS Code atau Editor Code favorit Anda berikut ini agar mendapatkan keluaran (output) sesuai yang diminta!
+  for (int i = 0; i < 10; i++) {
+    print('hello ${i + 2}');
+  }
+  
+  Output yang diminta:
+  Nama saya adalah Fulan, sekarang berumur 18
+  Nama saya adalah Fulan, sekarang berumur 17
+  Nama saya adalah Fulan, sekarang berumur 16
+  Nama saya adalah Fulan, sekarang berumur 15
+  Nama saya adalah Fulan, sekarang berumur 14
+  Nama saya adalah Fulan, sekarang berumur 13
+  Nama saya adalah Fulan, sekarang berumur 12
+  Nama saya adalah Fulan, sekarang berumur 11
+  Nama saya adalah Fulan, sekarang berumur 10
+  Nama saya adalah Fulan, sekarang berumur 9
+  */
 
-Modifikasilah kode pada baris 3 di VS Code atau Editor Code favorit Anda
-berikut ini agar mendapatkan keluaran (*output*) sesuai yang diminta!
+  for (int i = 20; i > 10; i--) {
+    print('Nama saya adalah Fulan, sekarang berumur ${i - 2}');
+  }
+}
+```
 
-![](media/image1.png){width="5.752083333333333in"
-height="1.9597222222222221in"}
+**Hasil Eksekusi**
+![main.dart](img/main_dart.png)
+-----
 
-Output yang diminta:
+## Praktikum 2: Memahami Peran Dart dalam Flutter
 
-![](media/image2.png){width="3.6996052055993003in"
-height="2.4534503499562557in"}
+**Pertanyaan:** Mengapa sangat penting untuk memahami bahasa pemrograman Dart sebelum kita menggunakan framework Flutter? [cite\_start]Jelaskan\! [cite: 8]
 
-+-------+--------------------------------------------------------------+
-| *     | **Jawaban/Deskripsi**                                        |
-| *Lang |                                                              |
-| kah** |                                                              |
-+=======+==============================================================+
-| 1     | Menetapkan nilai variabel i dengan nilai 20, setelah itu     |
-|       | menetapkan kondisi i \> 10 agar nilai terakhir looping       |
-|       | berada di 11, menetapkan decrement. Setelah itu pada blok    |
-|       | kode loop menampilkan output yang diinginkan dimana nilai i  |
-|       | dikurangi 2 menggunakan print().                             |
-|       |                                                              |
-|       | ![](media/image3.png){width="5.752083333333333in"            |
-|       | height="2.127083333333333in"}                                |
-+-------+--------------------------------------------------------------+
-| 2     | Hasil:                                                       |
-|       |                                                              |
-|       | ![](media/image4.png){width="5.752083333333333in"            |
-|       | height="1.4770833333333333in"}                               |
-|       |                                                              |
-|       | Menampilkan output:\                                         |
-|       | *Nama saya adalah Fulan, sekarang berumur 18*                |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 17*              |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 16*              |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 15*              |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 14*              |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 13*              |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 12*              |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 11*              |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 10*              |
-|       |                                                              |
-|       | *  Nama saya adalah Fulan, sekarang berumur 9*               |
-+-------+--------------------------------------------------------------+
+**Jawaban:**
+[cite\_start]Penting untuk memahami Dart karena seluruh pengembangan framework Flutter, termasuk kode aplikasi, kode plugin, dan manajemen dependensi, menggunakan bahasa Dart dan fitur-fiturnya[cite: 9]. [cite\_start]Pemahaman dasar yang kuat tentang Dart akan membantu Anda menjadi lebih produktif dan nyaman saat mengembangkan aplikasi dengan Flutter[cite: 9].
 
-**Praktikum Ke-2**
+-----
 
-Mengapa sangat penting untuk memahami bahasa pemrograman Dart sebelum
-kita menggunakan framework Flutter ? Jelaskan!
+## Praktikum 3: Rangkuman Codelab
 
-  ----------------------------------------------------------------------------
-  **Langkah**   **Jawaban/Deskripsi**
-  ------------- --------------------------------------------------------------
-  1             Karena semua pengembangan framework Flutter melibatkan
-                pengetahuan/fitur mendalam dengan bahasa Dart; Kode aplikasi,
-                kode plugin, dan manajemen dependensi semuanya menggunakan
-                bahasa Dart beserta fitur-fiturnya. Memiliki pemahaman dasar
-                yang kuat tentang Dart akan memudahkan kita untuk menjadi
-                lebih produktif dengan Flutter dan akan membuat kita merasa
-                nyaman dalam pengembangan Flutter.
+[cite\_start]Berikut adalah poin-poin penting tentang Dart yang relevan untuk pengembangan aplikasi Flutter[cite: 11, 12].
 
-  ----------------------------------------------------------------------------
+1.  **Peran Dart dalam Flutter:**
 
-**Praktikum Ke-3**
+      * [cite\_start]Dart adalah bahasa utama untuk pengembangan aplikasi Flutter, termasuk kode aplikasi dan manajemen dependensi[cite: 12].
+      * [cite\_start]Memahami Dart adalah kunci untuk menjadi produktif dengan Flutter[cite: 12].
 
-Rangkumlah materi dari codelab ini menjadi poin-poin penting yang dapat
-Anda gunakan untuk membantu proses pengembangan aplikasi mobile
-menggunakan framework Flutter.
+2.  **Kelebihan Utama Bahasa Dart:**
 
-+-------+--------------------------------------------------------------+
-| *     | **Jawaban/Deskripsi**                                        |
-| *Lang |                                                              |
-| kah** |                                                              |
-+=======+==============================================================+
-| 1     | **1. Memahami Peran Dart dalam Flutter**                     |
-|       |                                                              |
-|       | -   Dart adalah bahasa pemrograman yang digunakan untuk      |
-|       |     mengembangkan **seluruh aspek** aplikasi Flutter,        |
-|       |     termasuk kode aplikasi, plugin, dan manajemen            |
-|       |     dependensi.                                              |
-|       |                                                              |
-|       | -   Pemahaman dasar tentang Dart sangat penting untuk        |
-|       |     menjadi **lebih produktif** dan nyaman saat menggunakan  |
-|       |     Flutter.                                                 |
-|       |                                                              |
-|       | **2. Kelebihan Utama Bahasa Dart**                           |
-|       |                                                              |
-|       | -   **Portabilitas**: Dart dapat diterjemahkan ke JavaScript |
-|       |     untuk web, atau dikompilasi secara native ke kode mesin  |
-|       |     (ARM dan x86) untuk platform lain, menjadikannya pilihan |
-|       |     yang ideal untuk **pengembangan lintas platform**.       |
-|       |                                                              |
-|       | -   **Keamanan dan Fleksibilitas**: Dart adalah bahasa       |
-|       |     **statis** (type-safe) yang menganalisis jenis data saat |
-|       |     runtime untuk menemukan bug lebih awal. Meskipun         |
-|       |     demikian, ia tetap fleksibel dengan fitur ***type        |
-|       |     annotations* yang opsional**.                            |
-|       |                                                              |
-|       | -   **Perkakas Produktif**: Dart memiliki ekosistem          |
-|       |     **perkakas (tooling)** yang kaya, termasuk alat analisis |
-|       |     kode dan plugin IDE yang modern, yang dirancang untuk    |
-|       |     proyek berskala besar.                                   |
-|       |                                                              |
-|       | -   ***Garbage Collection***: Dart memiliki fitur ini untuk  |
-|       |     mengelola memori secara otomatis, sehingga pengembang    |
-|       |     tidak perlu berurusan dengan dealokasi memori secara     |
-|       |     manual.                                                  |
-|       |                                                              |
-|       | **3. Cara Kerja Dart (Eksekusi Kode)**                       |
-|       |                                                              |
-|       | -   Kode Dart dapat dieksekusi dengan dua cara: melalui      |
-|       |     **Dart Virtual Machine (VM)** atau dengan **kompilasi ke |
-|       |     JavaScript**. \* **Kompilasi Just-In-Time (JIT)**:       |
-|       |                                                              |
-|       |     -   Digunakan selama **pengembangan** untuk *debugging*  |
-|       |         dan fitur ***hot reload***.                          |
-|       |                                                              |
-|       |     -   Kode dikompilasi sesuai kebutuhan (Just in time) ke  |
-|       |         kode mesin.                                          |
-|       |                                                              |
-|       |     -   *Hot reload*, fitur andalan Flutter, didasarkan pada |
-|       |         kompiler JIT ini, memungkinkan pengembang melihat    |
-|       |         perubahan kode secara instan.                        |
-|       |                                                              |
-|       | -   **Kompilasi Ahead-Of-Time (AOT)**:                       |
-|       |                                                              |
-|       |     -   Digunakan untuk membuat **aplikasi siap rilis**.     |
-|       |                                                              |
-|       |     -   Seluruh kode dan VM dikompilasi sebelumnya ke kode   |
-|       |         mesin, menghasilkan performa yang **sangat cepat**.  |
-|       |                                                              |
-|       | **4. Dasar-Dasar Bahasa Dart**                               |
-|       |                                                              |
-|       | -   **Struktur Kode**: Sintaks Dart memiliki kemiripan       |
-|       |     dengan bahasa C dan JavaScript. Setiap aplikasi Dart     |
-|       |     harus memiliki fungsi main() sebagai titik awal          |
-|       |     eksekusi.                                                |
-|       |                                                              |
-|       | -   **Berorientasi Objek (OOP)**: Dart adalah bahasa         |
-|       |     berorientasi objek. Semua data adalah turunan dari       |
-|       |     kelas. Ini mendukung konsep-konsep inti OOP seperti      |
-|       |     ***encapsulation***, ***inheritance***, dan              |
-|       |     ***polymorphism***.                                      |
-|       |                                                              |
-|       | -   **Operator**: Operator di Dart sebenarnya adalah metode  |
-|       |     yang didefinisikan dalam kelas.                          |
-|       |                                                              |
-|       |     -   Operator aritmatika (+, -, \*, /, \~/ untuk          |
-|       |         pembagian bilangan bulat, %).                        |
-|       |                                                              |
-|       |     -   Operator perbandingan (==, !=, \<, \>). Berbeda dari |
-|       |         Java, == di Dart membandingkan **isi** variabel,     |
-|       |         bukan referensinya.                                  |
-|       |                                                              |
-|       |     -   Operator logika (!, \|\|, &&).                       |
-|       |                                                              |
-|       | **5. Lingkungan Pengembangan**                               |
-|       |                                                              |
-|       | -   Kita dapat memulai dan bereksperimen dengan Dart         |
-|       |     menggunakan **DartPad**, sebuah alat *online* yang mudah |
-|       |     diakses.                                                 |
-|       |                                                              |
-|       | -   Untuk menjalankan kode secara lokal, Kita dapat          |
-|       |     menyimpannya sebagai file .dart dan mengeksekusinya di   |
-|       |     terminal dengan perintah dart nama_file.dart.            |
-+-------+--------------------------------------------------------------+
+      * [cite\_start]**Portabilitas:** Dart dapat dikompilasi ke JavaScript untuk web atau ke kode mesin untuk platform lain, menjadikannya ideal untuk pengembangan lintas platform[cite: 12].
+      * [cite\_start]**Keamanan dan Fleksibilitas:** Dart adalah bahasa yang `type-safe`, yang membantu menemukan *bug* lebih awal, tetapi tetap fleksibel dengan fitur *optional type annotations*[cite: 12].
+      * [cite\_start]**Perkakas Produktif:** Dart memiliki ekosistem *tooling* yang lengkap, termasuk alat analisis kode dan plugin IDE[cite: 12].
+      * [cite\_start]**Garbage Collection:** Dart mengelola memori secara otomatis, membebaskan pengembang dari tugas dealokasi memori manual[cite: 12].
 
-**Praktikum Ke-4**
+3.  **Cara Kerja Dart (Eksekusi Kode):**
 
-Buatlah slide yang berisi penjelasan dan contoh eksekusi kode tentang
-perbedaan Null Safety dan Late variabel ! (Khusus soal ini kelompok
-berupa link google slide)
+      * [cite\_start]**Kompilasi Just-In-Time (JIT):** Digunakan selama pengembangan dan *debugging*[cite: 12]. [cite\_start]Kompiler JIT memungkinkan fitur andalan Flutter, yaitu `hot reload`, yang menampilkan perubahan kode secara instan[cite: 12].
+      * [cite\_start]**Kompilasi Ahead-Of-Time (AOT):** Digunakan untuk membuat aplikasi siap rilis, menghasilkan performa yang sangat cepat[cite: 12].
 
-+-------+--------------------------------------------------------------+
-| *     | **Jawaban/Deskripsi**                                        |
-| *Lang |                                                              |
-| kah** |                                                              |
-+=======+==============================================================+
-| 1     | NULL SAFETY\                                                 |
-|       | Null safety adalah fitur di Dart (mulai Dart 2.12) yang      |
-|       | **mencegah error karena null** dengan cara:                  |
-|       |                                                              |
-|       | -   **Semua variabel secara default *non-nullable*** →       |
-|       |     artinya tidak bisa menyimpan null.                       |
-|       |                                                              |
-|       | -   Jika suatu variabel boleh null, kita harus **jelas       |
-|       |     mendeklarasikannya** dengan tanda ?.                     |
-|       |                                                              |
-|       | Contoh kode:                                                 |
-|       |                                                              |
-|       | ![](media/image5.png){width="5.8125in"                       |
-|       | height="1.2215277777777778in"}                               |
-|       |                                                              |
-|       | Output:\                                                     |
-|       | ![](media/image6.png){width="5.8125in"                       |
-|       | height="0.5923611111111111in"}                               |
-|       |                                                              |
-|       | LATE VARIABLE                                                |
-|       |                                                              |
-|       | late adalah **keyword** di Dart yang digunakan untuk menunda |
-|       | inisialisasi variabel **non-nullable** sampai benar-benar    |
-|       | dibutuhkan. Normalnya, variabel **non-nullable** harus       |
-|       | langsung diisi nilainya. Tapi dengan late, kita bisa         |
-|       | mendeklarasikan dulu, lalu isi nanti **tanpa error null      |
-|       | safety**.                                                    |
-|       |                                                              |
-|       | Contoh kode:\                                                |
-|       | ![](media/image7.png){width="5.8125in"                       |
-|       | height="1.5902777777777777in"}                               |
-|       |                                                              |
-|       | Output:\                                                     |
-|       | ![](media/image8.png){width="5.8125in"                       |
-|       | height="0.36319444444444443in"}                              |
-+-------+--------------------------------------------------------------+
-| 2     | Perbandingan:                                                |
-|       |                                                              |
-|       |   -                                                          |
-|       | ------------------------------------------------------------ |
-|       |                                                              |
-|       | **Fitur**      **Null Safety (?)**  **Late Variable (late)** |
-|       |   -                                                          |
-|       | ------------- -------------------- ------------------------- |
-|       |   Nilai awal     Bisa null (tanpa     Harus diisi **sebelum  |
-|       |                  error)               dipakai**              |
-|       |                                                              |
-|       |   Tipe           String? (nullable)   late String            |
-|       |                                       (non-nullable,         |
-|       |                                       inisialisasi ditunda)  |
-|       |                                                              |
-|       |   Saat diakses   Tidak error → hasil  Error →                |
-|       |                                                              |
-|       |  sebelum isi    null                 LateInitializationError |
-|       |                                                              |
-|       |                                                              |
-|       | Kapan dipakai  Kalau variabel       Kalau variabel pasti ada |
-|       |                  memang boleh null    nilai, tapi belakangan |
-|       |   -                                                          |
-|       | ------------------------------------------------------------ |
-+-------+--------------------------------------------------------------+
+4.  **Dasar-Dasar Bahasa Dart:**
+
+      * [cite\_start]**Struktur Kode:** Sintaks Dart mirip dengan C dan JavaScript, dengan fungsi `main()` sebagai titik awal eksekusi[cite: 12].
+      * [cite\_start]**Berorientasi Objek (OOP):** Dart adalah bahasa berorientasi objek di mana semua data adalah turunan dari sebuah kelas[cite: 12].
+      * [cite\_start]**Operator:** Operator di Dart adalah metode yang didefinisikan dalam kelas[cite: 12]. [cite\_start]Contohnya termasuk operator aritmatika (`+`, `-`), perbandingan (`==`, `!=`), dan logika (`!`, `||`)[cite: 12].
+
+-----
+
+## Praktikum 4: Perbedaan Null Safety dan Late Variables
+
+[cite\_start]**Pertanyaan:** Buatlah slide yang berisi penjelasan dan contoh eksekusi kode tentang perbedaan Null Safety dan Late variabel\! [cite: 14]
+
+**Jawaban:**
+
+### Null Safety
+
+[cite\_start]Fitur yang diperkenalkan pada Dart 2.12 ini mencegah *error* karena nilai `null`[cite: 16]. [cite\_start]Secara *default*, semua variabel adalah *non-nullable*, artinya mereka tidak dapat menyimpan nilai `null`[cite: 16]. [cite\_start]Jika sebuah variabel diizinkan untuk menjadi `null`, Anda harus secara eksplisit mendeklarasikannya dengan tanda `?`[cite: 16].
+
+**Contoh Kode**
+```dart
+void main() {
+  // Non-nullable
+  String name = "Rifda";
+  print("Name: $name");
+
+  // Nullable
+  String? nickname;
+  print("Nickname: $nickname");
+
+  if (nickname != null) {
+    print("Length: ${nickname.length}");
+  } else {
+    print("Nickname masih null");
+  }![alt text](image.png)
+}
+```
+
+**Hasil Eksekusi**
+![Tangkapan Layar Aplikasi](img/null_safety.png)
+### Late Variable
+
+[cite\_start]`late` adalah *keyword* yang digunakan untuk menunda inisialisasi variabel *non-nullable* hingga variabel tersebut benar-benar dibutuhkan[cite: 16]. [cite\_start]Ini memungkinkan Anda mendeklarasikan variabel tanpa langsung memberinya nilai, tanpa melanggar aturan *null safety*[cite: 16].
+
+**Contoh Kode**
+```dart
+void main() {
+  late String token; // non-nullable, tapi belum diisi
+  
+  // token belum bisa diakses sekarang
+  token = "abc123"; // diisi belakangan
+  print("Token: $token");
+}
+```
+
+**Hasil Eksekusi**
+![Tangkapan Layar Aplikasi](img/late_variabel.png)
+### Perbandingan
+
+| Fitur | Null Safety (?) | Late Variable (late) |
+| :--- | :--- | :--- |
+| **Nilai Awal** | [cite\_start]Bisa `null` tanpa *error*[cite: 16]. | [cite\_start]Harus diisi sebelum digunakan[cite: 16]. |
+| **Tipe** | [cite\_start]`String?` (nullable)[cite: 16]. | [cite\_start]`late String` (non-nullable, inisialisasi ditunda)[cite: 16]. |
+| **Akses sebelum diisi** | [cite\_start]Tidak menghasilkan *error* (hasil `null`)[cite: 16]. | [cite\_start]Menghasilkan *error* `LateInitializationError`[cite: 16]. |
+| **Kapan Digunakan** | [cite\_start]Ketika variabel memang diizinkan untuk menjadi `null`[cite: 16]. | [cite\_start]Ketika variabel pasti akan memiliki nilai, tetapi tidak pada saat deklarasi[cite: 16]. |
