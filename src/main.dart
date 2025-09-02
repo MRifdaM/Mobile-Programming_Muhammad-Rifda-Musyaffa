@@ -17,7 +17,7 @@ void main() {
   Nama saya adalah Fulan, sekarang berumur 9 
   */
 
-  for (int i = 20; i > 10; i--) {
-    print('Nama saya adalah Fulan, sekarang berumur ${i - 2}');
+  for (int i = 0; i < 10; i++) {
+    print('Nama saya adalah Rifda, sekarang berumur ${18 - i}');
   }
 }
