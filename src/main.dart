@@ -46,35 +46,35 @@ void main(List<String> args) {
 
   //Praktikum 3: Menerapkan Perulangan "for" dan "break-continue"
 
-  // for (int index = 10; index < 27; index++) {
-  //   // print(index);
+  for (int index = 10; index < 27; index++) {
+    // print(index);
 
-  //   if (index == 21)
-  //     break;
-  //   else if (index > 1 && index < 7) continue;
-  //   print(index);
-  // }
+    if (index == 21)
+      break;
+    else if (index > 1 && index < 7) continue;
+    print(index);
+  }
 
   //Tugas Praktikum
-  String nama = "Muhammad Rifda Musyaffa'";
-  String nim = '2341720028';
+  // String nama = "Muhammad Rifda Musyaffa'";
+  // String nim = '2341720028';
 
-  for (int n = 0; n <= 201; n++) {
-    bool prima = true;
+  // for (int n = 0; n <= 201; n++) {
+  //   bool prima = true;
 
-    if (n < 2) {
-      prima = false;
-    } else {
-      for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-          prima = false;
-          break; 
-        }
-      }
-    }
+  //   if (n < 2) {
+  //     prima = false;
+  //   } else {
+  //     for (int i = 2; i * i <= n; i++) {
+  //       if (n % i == 0) {
+  //         prima = false;
+  //         break; 
+  //       }
+  //     }
+  //   }
 
-    if (prima) {
-      print("$n adalah bilangan prima, $nama | $nim");
-    }
-  }
+  //   if (prima) {
+  //     print("$n adalah bilangan prima, $nama | $nim");
+  //   }
+  // }
 }
