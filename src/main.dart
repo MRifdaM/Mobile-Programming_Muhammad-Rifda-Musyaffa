@@ -95,7 +95,11 @@ void main() {
   // List<int?> list1 = [1, 2, null];
   // print(list1);
   // var list3 = [0, ...?list1];
-  // print(list3.length);
+  // print(list3);
+
+  //   var nim = [2, 3, 4, 1, 7, 2, 0, 0, 2, 8]; 
+  //   var listNim = [...nim]; 
+  //   print(listNim);
 
   // //Langkah 4
   // // var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
@@ -128,35 +132,35 @@ void main() {
   //Praktikum 5
   //Langkah 1
 
-  var record = ('first', a: 2, b: true, 'last');
-  print(record);
+  // var record = ('first', a: 2, b: true, 'last');
+  // print(record);
 
-  var pasangan = (10, 20);
-  print("Sebelum tukar: $pasangan");
+  // var pasangan = (10, 20);
+  // print("Sebelum tukar: $pasangan");
 
-  var hasil = tukar(pasangan);
-  print("Sesudah tukar: $hasil");
+  // var hasil = tukar(pasangan);
+  // print("Sesudah tukar: $hasil");
 
-  //Langkah 3
-  // Record type annotation in a variable declaration:
-  // (String, int) mahasiswa;
+  // //Langkah 3
+  // // Record type annotation in a variable declaration:
+  // // (String, int) mahasiswa;
   
-    (String, int) mahasiswa = ('Rifda', 12345678);
+  //   (String, int) mahasiswa = ('Rifda', 12345678);
 
-  print(mahasiswa);        
-  print(mahasiswa.$1);     
-  print(mahasiswa.$2);
+  // print(mahasiswa);        
+  // print(mahasiswa.$1);     
+  // print(mahasiswa.$2);
 
-  var mahasiswa2 = ('Muhammad Rifda Musyaffa | 2341720028', a: 2, b: true, 'last');
+  // var mahasiswa2 = ('Muhammad Rifda Musyaffa | 2341720028', a: 2, b: true, 'last');
 
-  print(mahasiswa2.$1); // Prints 'first'
-  print(mahasiswa2.a); // Prints 2
-  print(mahasiswa2.b); // Prints true
-  print(mahasiswa2.$2); // Prints 'last' 
+  // print(mahasiswa2.$1); // Prints 'first'
+  // print(mahasiswa2.a); // Prints 2
+  // print(mahasiswa2.b); // Prints true
+  // print(mahasiswa2.$2); // Prints 'last' 
 }
 
   //langkah 3
-(int, int) tukar((int, int) record) {
-  var (a, b) = record;
-  return (b, a);
-}
+// (int, int) tukar((int, int) record) {
+//   var (a, b) = record;
+//   return (b, a);
+// }
