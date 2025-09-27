@@ -1637,7 +1637,7 @@ class ItemCard extends StatelessWidget {
 ```
 Kode tersebut digunakan untuk widget setiap item card di HomePage.
 
-### Langkah 3: Memperbarui item_page.dart untuk menerima data baru dan menerapkan Hero widget
+### Langkah 5: Memperbarui item_page.dart untuk menerima data baru dan menerapkan Hero widget
 
 ```dart
 import 'package:flutter/material.dart';
@@ -1977,3 +1977,4 @@ class ItemPage extends StatelessWidget {
 
 
 ---
+
