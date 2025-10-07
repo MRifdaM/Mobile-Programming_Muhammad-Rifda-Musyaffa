@@ -31,5 +31,6 @@ Setiap folder di bawah ini berisi kode, tangkapan layar (`screenshots`), dan pen
 | 03  | **Pemrograman Dasar Dart (Part 3)** | Collection, Record, Function                                                    | [Lihat Codelab 04](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab04_dart) |
 | 04  | **Aplikasi Pertama & Widget Dasar Flutter** | Stateless Widget, Statefull Widget                                      | [Lihat Codelab 05](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab05_dart) |
 | 05  | **Layout & Navigasi**               | Basic Layout, Navigasi                                                          | [Lihat Codelab 06](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab06_dart) |
-| 06  | **Managemen Plugin**                | Cara Menggunakan Plugin di Flutter                                              | [Lihat Codelab 06](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab07_dart) |
+| 06  | **Managemen Plugin**                | Cara Menggunakan Plugin di Flutter                                              | [Lihat Codelab 07](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab07_dart) |
+
 
