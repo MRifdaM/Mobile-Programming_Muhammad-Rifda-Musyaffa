@@ -1,6 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:kamera_filter_app/widgets/takepicture_screen.dart';
+import 'package:kamera_filter_app/screens/takepicture_screen.dart';
 
 // Tambahkan variabel global untuk kamera (meskipun nanti akan dilempar ke widget)
 // Codelab meminta Anda mengambil 'firstCamera' di sini.
