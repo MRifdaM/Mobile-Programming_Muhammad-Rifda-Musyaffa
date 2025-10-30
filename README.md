@@ -667,20 +667,6 @@ Daripada menulis logika penghitungan ini di dalam `PlanScreen`, kita menempatkan
 
 ## 4\. Hasil Langkah 9 (Simulasi GIF dan Penjelasan)
 
-Saya tidak bisa membuat file GIF, tetapi berikut adalah simulasi persis dari apa yang akan Anda lihat:
-
-> **[Simulasi GIF]**
->
-> 1.  Aplikasi `master_plan` ditampilkan. Daftar tugas di tengah masih kosong.
-> 2.  Di bagian **paling bawah layar**, terdapat teks: **"0 out of 0 tasks"**.
-> 3.  Pengguna menekan tombol `+` (FloatingActionButton).
-> 4.  Sebuah baris tugas baru (checkbox dan text field) muncul di daftar.
-> 5.  Teks di bagian bawah layar **langsung diperbarui** menjadi: **"0 out of 1 tasks"**.
-> 6.  Pengguna menekan tombol `+` lagi. Baris tugas kedua muncul.
-> 7.  Teks di bagian bawah diperbarui lagi menjadi: **"0 out of 2 tasks"**.
-> 8.  Pengguna **mencentang checkbox** pada tugas pertama.
-> 9.  Seketika itu juga, teks di bagian bawah layar **langsung berubah** menjadi: **"1 out of 2 tasks"**.
-
 ### Penjelasan Apa yang Telah Dibuat (Langkah 9)
 
 Langkah 9 adalah langkah final yang mengikat semuanya. Kita mengganti `body` dari `Scaffold` dengan widget `ValueListenableBuilder`.
@@ -696,7 +682,7 @@ Kita membuat UI yang **reaktif**. Di dalam `builder`, kita membuat `Column` yang
 1.  `Expanded(_buildList(plan))`: Daftar tugas kita.
 2.  `SafeArea(Text(plan.completenessMessage))`: Teks progres dari Langkah 3.
 
-Setiap kali Anda mencentang *checkbox* (yang mengubah data di `PlanProvider`), `ValueListenableBuilder` mendeteksinya dan langsung membangun ulang `Text` di bagian bawah dengan pesan progres yang baru.
+Setiap kali mencentang *checkbox* (yang mengubah data di `PlanProvider`), `ValueListenableBuilder` mendeteksinya dan langsung membangun ulang `Text` di bagian bawah dengan pesan progres yang baru.
 
 # Praktikum 3: Membuat State di Multiple Screens
 Satu kalimat populer atau viral yang beredar dalam komunitas Flutter adalah "Lift State Up". Mantra ini merujuk ke sebuah ide di mana objek State seharusnya berada lebih tinggi dari pada widget yang membutuhkannya di dalam sebuah widget tree. InheritedWidget yang telah kita buat sebelumnya bekerja dengan sempurna pada satu screen, tapi apa yang akan terjadi jika kita tambah screen kedua ?
@@ -1080,4 +1066,5 @@ Berikut adalah rincian tugasnya:
 4.  **Membuat `ListTile`:** Untuk setiap `plan` di dalam daftar, ia membuat sebuah `ListTile` (satu baris di daftar) yang menampilkan:
     * `title`: Nama rencana (`plan.name`).
     * `subtitle`: Progres rencana (`plan.completenessMessage`).
+
 5.  **Menangani Navigasi (`onTap`):** Ini adalah bagian terpenting. Anda menambahkan fungsi `onTap` pada `ListTile`. Fungsi inilah yang **menjalankan `Navigator.push`** (panah di diagram) untuk mengirim pengguna ke `PlanScreen` sambil membawa data `plan` yang baru saja mereka ketuk.
