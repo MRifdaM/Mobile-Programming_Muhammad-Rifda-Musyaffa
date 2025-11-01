@@ -33,7 +33,8 @@ Setiap folder di bawah ini berisi kode, tangkapan layar (`screenshots`), dan pen
 | 05  | **Layout & Navigasi**               | Basic Layout, Navigasi                                                          | [Lihat Codelab 06](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab06_dart) |
 | 06  | **Managemen Plugin**                | Cara Menggunakan Plugin di Flutter                                              | [Lihat Codelab 07](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab07_dart) |
 | 07  | **Kamera**                          | Cara Menggunakan Kamera di Flutter                                              | [Lihat Codelab 09](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab09_dart) |
-| 07  | **State**                           | Cara Menerapkan State di Flutter                                                | [Lihat Codelab 10](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab10_dart) |
+| 08  | **State**                           | Cara Menerapkan State di Flutter                                                | [Lihat Codelab 10](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab10_dart) |
+| 09  | **Asyncronus**                      | Cara Menerapkan Async di Flutter                                                | [Lihat Codelab 11](https://github.com/MRifdaM/Mobile-Programming_Muhammad-Rifda-Musyaffa/tree/codelab11_dart) |
 
 
 
